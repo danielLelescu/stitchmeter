@@ -6,14 +6,6 @@
 
 ---
 
-## 🎥 Demo
-
-<!-- Replace with a YouTube embed once the video is uploaded, e.g.:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="StitchMeter demo" frameborder="0" allowfullscreen></iframe>
--->
-
----
-
 ## Overview 🪡
 
 StitchMeter is a **surgical training device** designed to measure two things surgeons care about when closing a wound with sutures:
