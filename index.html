@@ -77,6 +77,19 @@
       </div>
     </section>
 
+    <section class="showcase">
+      <div class="container-wide">
+        <figure class="figure-frame">
+          <img src="assets/G25_CAD.jpg" alt="CAD render of the Stitchmeter measurement module: acrylic base plate carrying the flexure guiding stages, the two test bodies, and the amplification linkage." width="1280" height="815" />
+          <figcaption class="figure-caption">
+            <div class="figure-caption-row">
+              <span><strong>Full CAD assembly.</strong> CAPTION — one sentence naming what the reader is looking at.</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
     <section class="section section-alt" id="overview">
       <div class="container">
         <div class="section-head"><p class="project-kicker">Project at a glance</p><h2 class="section-title">OUTCOME-FOCUSED SECTION TITLE</h2></div>
@@ -96,23 +109,65 @@
     </section>
 
     <section class="section" id="design">
-      <div class="container">
+      <div class="container-wide">
         <div class="section-head"><p class="project-kicker">Technical approach</p><h2 class="section-title">HOW THE SYSTEM WORKS</h2></div>
-        <div class="design-grid">
-          <article class="design-card"><span class="design-number">01</span><h3>Subsystem / principle 1</h3><p>Technical explanation.</p></article>
-          <article class="design-card"><span class="design-number">02</span><h3>Subsystem / principle 2</h3><p>Technical explanation.</p></article>
-          <article class="design-card"><span class="design-number">03</span><h3>Subsystem / principle 3</h3><p>Technical explanation.</p></article>
+
+        <div class="compare-grid">
+          <figure class="compare-item">
+            <figcaption class="compare-label">
+              <span class="compare-step">01</span>
+              <h3>Ideal kinematic schema</h3>
+            </figcaption>
+            <a class="figure-frame figure-frame--paper figure-zoom" href="assets/CdM%20Schema%20Ideal.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the ideal kinematic schema as a PDF">
+              <img src="assets/schema-ideal.png" alt="Ideal kinematic schema of the Stitchmeter: modules A, B and C on ideal linear guides, with springs k_I and k_II and buckling blades drawn as ideal elements." width="1400" height="1358" loading="lazy" />
+            </a>
+          </figure>
+
+          <div class="compare-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h15"/><path d="m13 6 6 6-6 6"/></svg>
+            <span>Flexure realisation</span>
+          </div>
+
+          <figure class="compare-item">
+            <figcaption class="compare-label">
+              <span class="compare-step">02</span>
+              <h3>Flexure implementation</h3>
+            </figcaption>
+            <a class="figure-frame figure-frame--paper figure-zoom" href="assets/CdM%20Schema%20Flex.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open the flexure implementation schema as a PDF">
+              <img src="assets/schema-flex.png" alt="Flexure implementation of the same schema: every ideal guide is replaced by a parallel leaf-spring stage and every ideal spring by a dimensioned bending beam." width="1400" height="1358" loading="lazy" />
+            </a>
+          </figure>
+        </div>
+
+        <div class="prose-block">
+          <h3>SUBHEADING — what the translation from ideal to flexure changes</h3>
+          <p>EXPLANATION PARAGRAPH 1 — describe the ideal schema on the left: which degrees of freedom each module has, what the springs represent, and how the measurement chain works in principle.</p>
+          <p>EXPLANATION PARAGRAPH 2 — describe the flexure realisation on the right: which ideal element became which flexure, why that substitution was chosen, and what it costs in stroke, parasitic motion, or stiffness.</p>
         </div>
       </div>
     </section>
 
     <section class="section section-alt" id="results">
-      <div class="container">
+      <div class="container-wide">
         <div class="section-head"><p class="project-kicker">Key results</p><h2 class="section-title">WHAT CHANGED / WHAT WORKED</h2></div>
-        <div class="results-grid">
-          <article class="result-card"><span class="result-number">01</span><h3>Result 1</h3><p>Evidence or outcome.</p></article>
-          <article class="result-card"><span class="result-number">02</span><h3>Result 2</h3><p>Evidence or outcome.</p></article>
+
+        <div class="prose-block" style="margin-top: 0;">
+          <h3>SUBHEADING — what the design board demonstrates</h3>
+          <p>EXPLANATION PARAGRAPH 1 — what was designed, sized and verified on this board: guiding architecture, stiffness targets per phase, and the amplification needed to reach a readable displacement.</p>
+          <p>EXPLANATION PARAGRAPH 2 — the measured or computed outcome: resolution reached, stiffness values retained (EP2 / EP6 / EP9), and what the Python sizing routine confirmed.</p>
         </div>
+
+        <figure class="figure-frame figure-frame--paper" style="margin-top: clamp(2rem, 4vw, 3rem);">
+          <a class="figure-zoom" href="docs/G25_Planche1.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open Planche 1 as a full-resolution PDF">
+            <img src="assets/planche1.jpg" alt="Planche 1: A3 design board covering the ideal guiding system, a single module at rest, an artist's view of the module, resolution and amplification calculations for both phases, and the retained stiffness table." width="2800" height="1980" loading="lazy" />
+          </a>
+          <figcaption class="figure-caption">
+            <div class="figure-caption-row">
+              <span><strong>Planche 1</strong> — CAPTION — one sentence on what to look at first.</span>
+              <a class="figure-link" href="docs/G25_Planche1.pdf" target="_blank" rel="noopener noreferrer">Open full-resolution PDF ↗</a>
+            </div>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
