@@ -83,7 +83,7 @@
           <img src="assets/G25_CAD.jpg" alt="CAD render of the Stitchmeter measurement module: acrylic base plate carrying the flexure guiding stages, the two test bodies, and the amplification linkage." width="1280" height="815" />
           <figcaption class="figure-caption">
             <div class="figure-caption-row">
-              <span><strong>Full CAD assembly.</strong> System fits inside a 25x25x5cm box and weighs about 1.6kg</span>
+              <span><strong>Full CAD assembly - </strong> System fits inside a 25x25x5cm box and weighs about 1.6kg</span>
             </div>
           </figcaption>
         </figure>
@@ -97,12 +97,11 @@
           <article class="info-card">
             <p class="card-eyebrow">Design challenge</p>
             <h3>INTERNAL KNOT FORCE AND TENSILE RESISTANCE</h3>
-              <p>Internal knot force goes up to 8N, while knot tensile resistance goes up to 96N.</p> 
-              <p>Input force must not exceed 10N during resistance testing. Measurement graduations must be at least 0.5mm,
-              distinguishable to the naked eye.</p>
+              <p></p>
+              <p>Internal knot force goes up to 8N, while knot tensile resistance goes up to 96N. Input force must not exceed 10N during resistance testing.
+              <p> Measurement graduations must be at least 0.5mm, distinguishable to the naked eye.</p>
               <p>The device must resist at least 100,000 cycles, and be operable in extreme environments (e.g sand, snow).</p>
               <p>The device must have an estimated production cost less than 300CHF. </p>
-              <p>Emphasis on prototyping and design.</p>
           </article>
           <article class="info-card highlight">
             <p class="card-eyebrow">My contribution</p>
@@ -155,8 +154,7 @@
           <p><strong>Ideal - </strong> Viewing the system with ideal components makes its parts much clearer. 
             We observe 3 clearly defined blocks: A, B, and C.</p> 
             <p>Phase I: Block B is mobile (1 DOF) while Block A is immobilized (by a ridge not shown beneath the blocks). 
-            As Block B is pulled towards Block A by the tightening of a suture thread, its displacement is amplified by the lever effect 
-            on the linked green needle (far right).
+            As Block B is pulled towards Block A by the tightening of a suture thread, its displacement is amplified by the lever effect on the linked green needle (far right).
             Block B's displacement is translated into force by the K1 spring and displayed on the first ruler in yellow. 
             Block B's rigidity can be discretely modified by the "lames à flamber" (buckling blades) which make lateral movement 
             more challenging if toggled into a buckled state by the camshaft in blue, operated via knob.</p>
@@ -165,11 +163,11 @@
             and displayed on the second ruler in yellow.</p>
           <p><strong>Flexure - </strong> Linear bearings are replaced with pairs of blades (1 DOF), 
             linkages are replaced with single blades (2 DOF), and pivots are replaced with crossed blades (1 DOF). 
-            Spring K1 becomes the rigid pair of blades guiding Block B.
-            Block C is implemented with a "4-blade table" design as proposed by our professor, which allows for 
-            discrete rigidity modification (and a non-linear effect on the rigidity profile)
-            by nature of transversal spring which pre-stresses the blades. Translation to flexure mechanisms entails a 
-            delicate balance between rigidity, blade resistance, parasitic motion, and weight.
+            
+            <p>Block B is guided by a rigid pair of blades which emulate Spring K1.
+            Block C is implemented with a "4-blade table" design as proposed by our professor, which allows for discrete rigidity modification (and a non-linear effect on the rigidity profile)
+            by nature of transversal spring which pre-stresses the blades.</p> 
+            <p>Translation to flexure mechanisms entails a delicate balance between rigidity, blade resistance, parasitic motion, and weight.
             My team and I utilized Python scripts and AI to find suitable sets of dimensions optimized for each criterion.</p>
             <p>Please see my team's report for further detail on how we designed and implemented the system.</p>
         </div>
@@ -181,9 +179,16 @@
         <div class="section-head"><p class="project-kicker">Key results</p><h2 class="section-title">WHAT CHANGED / WHAT WORKED</h2></div>
 
         <div class="prose-block" style="margin-top: 0;">
-          <h3>SUBHEADING — what the design board demonstrates</h3>
-          <p>EXPLANATION PARAGRAPH 1 — what was designed, sized and verified on this board: guiding architecture, stiffness targets per phase, and the amplification needed to reach a readable displacement.</p>
-          <p>EXPLANATION PARAGRAPH 2 — the measured or computed outcome: resolution reached, stiffness values retained (EP2 / EP6 / EP9), and what the Python sizing routine confirmed.</p>
+          <h3>My Initial Pitch</h3>
+          <p>For this project, much emphasis was placed on the design process. 5 design boards, each with a distinct solution proposal, 
+          were requested as our first deliverable. We would then select the design board which we believed to have the most potential, 
+          and develop it into our final product.</p>
+          <p>On this board, we see the beginnings of Block A (here on the left) and B (here on the right), 
+          switching from mobile to immobile or vice versa between Phases I and II. The separate-ruler approach
+          and rigid pairs of blades also remained all the way through the design process. One major difference is a complete lack of
+          thread-changing, instead I opted for having three near-identical "modules" side-by-side, with differing rigidities for different threads.
+          Block C was the subject of much debate, here a similar concept appears in orange underneath my 3-stage lever, 
+          designed for maximum amplification. I also attempted to prototype a rigidity step function for Phase II, with staged springs.</p>
         </div>
 
         <figure class="figure-frame figure-frame--paper" style="margin-top: clamp(2rem, 4vw, 3rem);">
@@ -192,7 +197,7 @@
           </a>
           <figcaption class="figure-caption">
             <div class="figure-caption-row">
-              <span><strong>Planche 1</strong> — CAPTION — one sentence on what to look at first.</span>
+              <span><strong>Planche 1 - </strong> Modular initial design board</span>
               <a class="figure-link" href="docs/G25_Planche1.pdf" target="_blank" rel="noopener noreferrer">Open full-resolution PDF ↗</a>
             </div>
           </figcaption>
@@ -202,10 +207,10 @@
 
     <section class="section" id="documentation">
       <div class="container">
-        <div class="section-head"><p class="project-kicker">Documentation</p><h2 class="section-title">Files, code, and evidence</h2></div>
+        <div class="section-head"><p class="project-kicker">Documentation</p><h2 class="section-title">Report and Presentation</h2></div>
         <div class="docs-grid">
-          <a class="doc-card" href="FILE_OR_URL"><span class="doc-type">TYPE</span><h3>Document title</h3><p>What the employer will find here.</p><span class="doc-link">Open ↗</span></a>
-          <a class="doc-card" href="FILE_OR_URL"><span class="doc-type">TYPE</span><h3>Document title</h3><p>What the employer will find here.</p><span class="doc-link">Open ↗</span></a>
+          <a class="doc-card" href="docs/G25_Rapport.pdf"><span class="doc-type">PDF</span><h3>Group 25 Project Report</h3><p>Final report, in-depth detail on every feature</p><span class="doc-link">Open ↗</span></a>
+          <a class="doc-card" href="FILE_OR_URL"><span class="doc-type">Video</span><h3>Design Board 1 Pitch</h3><p>Short video (3 min) explaining my board in more detail</p><span class="doc-link">Open ↗</span></a>
         </div>
       </div>
     </section>
