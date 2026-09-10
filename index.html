@@ -66,12 +66,12 @@
           </div>
         </div>
         <aside class="project-visual">
-          <div><p class="visual-label">Focus: Flexure Mechanisms</p><p class="visual-subtitle">Precisely dimensioned bending beams</p></div>
+          <div><p class="visual-label">Focus: Flexure Mechanisms</p><p class="visual-subtitle">Precisely dimensioned bending beams to replace pivots and bearings</p></div>
           <div class="metric-grid">
-            <div class="metric"><span class="metric-value">VALUE</span><span class="metric-label">metric 1</span></div>
-            <div class="metric"><span class="metric-value">VALUE</span><span class="metric-label">metric 2</span></div>
-            <div class="metric"><span class="metric-value">VALUE</span><span class="metric-label">metric 3</span></div>
-            <div class="metric"><span class="metric-value">VALUE</span><span class="metric-label">metric 4</span></div>
+            <div class="metric"><span class="metric-value">Frictionless</span><span class="metric-label">Energy only converted by beam deformation</span></div>
+            <div class="metric"><span class="metric-value">Precise</span><span class="metric-label">No parasitic forces</span></div>
+            <div class="metric"><span class="metric-value">Durable</span><span class="metric-label">Cyclical elastic deformation</span></div>
+            <div class="metric"><span class="metric-value">Compact</span><span class="metric-label">Dimensions determine ridigity</span></div>
           </div>
         </aside>
       </div>
@@ -83,7 +83,7 @@
           <img src="assets/G25_CAD.jpg" alt="CAD render of the Stitchmeter measurement module: acrylic base plate carrying the flexure guiding stages, the two test bodies, and the amplification linkage." width="1280" height="815" />
           <figcaption class="figure-caption">
             <div class="figure-caption-row">
-              <span><strong>Full CAD assembly.</strong> CAPTION — one sentence naming what the reader is looking at.</span>
+              <span><strong>Full CAD assembly.</strong> System fits inside a 25x25x5cm box and weighs about 1.6kg</span>
             </div>
           </figcaption>
         </figure>
@@ -92,17 +92,28 @@
 
     <section class="section section-alt" id="overview">
       <div class="container">
-        <div class="section-head"><p class="project-kicker">Project at a glance</p><h2 class="section-title">OUTCOME-FOCUSED SECTION TITLE</h2></div>
+        <div class="section-head"><p class="project-kicker">Project at a glance</p><h2 class="section-title">2 PHASES - 3 THREADS</h2></div>
         <div class="project-intro-grid">
           <article class="info-card">
             <p class="card-eyebrow">Design challenge</p>
-            <h3>WHAT PROBLEM HAD TO BE SOLVED?</h3>
-            <p>2–3 sentences on constraints and context.</p>
+            <h3>MECHANICAL FORCE MEASUREMENT - KNOT INTERNAL FORCE and TENSILE RESISTANCE</h3>
+            <p>Knot internal force goes up to 8N, while knot tensile resistance goes up to 96N. 
+              Input force must not exceed 10N during resistance testing. Measurement graduations must be at least 0.5mm,
+              distinguishable to the naked eye.
+              The device must resist at least 100,000 cycles, and be operable in extreme environments (e.g sand, snow).
+              The device must have an estimated production cost less than 300CHF. Emphasis on prototyping and design.
+              </p>
           </article>
           <article class="info-card highlight">
-            <p class="card-eyebrow">Daniel's contribution</p>
-            <h3>WHAT DANIEL PERSONALLY OWNED</h3>
-            <ul class="clean-list"><li>Contribution 1</li><li>Contribution 2</li><li>Contribution 3</li></ul>
+            <p class="card-eyebrow">My contribution</p>
+            <h3>BRAINSTORMING AND LEADERSHIP</h3>
+            <ul class="clean-list"><li>Initial design proposals set the stage for efficient prototyping</li>
+              <li>Collaboration on discrete rigidification subsystem based on buckling beams, 
+                outside-the-box approach commended by professor</li>
+              <li>Dimensioning/stress calculations for Phase II measurement needle</li>
+              <li>Materials analysis and optimization</li>
+              <li>Large contribution to documentation</li>
+              </ul>
           </article>
         </div>
       </div>
@@ -140,9 +151,26 @@
         </div>
 
         <div class="prose-block">
-          <h3>SUBHEADING — what the translation from ideal to flexure changes</h3>
-          <p>EXPLANATION PARAGRAPH 1 — describe the ideal schema on the left: which degrees of freedom each module has, what the springs represent, and how the measurement chain works in principle.</p>
-          <p>EXPLANATION PARAGRAPH 2 — describe the flexure realisation on the right: which ideal element became which flexure, why that substitution was chosen, and what it costs in stroke, parasitic motion, or stiffness.</p>
+          <h3>Translation from Ideal to Flexure</h3>
+          <p><strong>Ideal - </strong> Viewing the system with ideal components makes its parts much clearer. 
+            We observe 3 clearly defined blocks: A, B, and C. During Phase I, Block B is mobile (1 DOF) while 
+            Block A is immobilized (by a ridge not shown beneath the blocks). As Block B is pulled towards Block A  
+            by the tightening of a suture thread, its displacement is amplified by the lever effect on the linked green needle (far right).
+            Block B's displacement is translated into force by the K1 spring and displayed on the first ruler in yellow. 
+            Block B's rigidity can be discretely modified by the "lames à flamber" (buckling blades) which make lateral movement 
+            more challenging if toggled into a buckled state by the camshaft in blue, operated via knob. 
+            During Phase II, Block B is immobilized while Block A (attached to Block B via knot) is pulled by Block C (1 DOF), which is in turn 
+            pulled by the lever in blue. The distance between Blocks A and C is translated into force by the K2 spring, 
+            and displayed on the second ruler in yellow.</p>
+          <p><strong>Flexure - </strong> Linear bearings are replaced with pairs of blades (1 DOF), 
+            linkages are replaced with single blades (2 DOF), and pivots are replaced with crossed blades (1 DOF). 
+            Spring K1 is found within the rigidity of the pair of blades guiding Block B.
+            Block C is implemented with a "4-blade table" design as proposed by our professor, which allows for 
+            discrete rigidity modification (and a non-linear effect on the rigidity profile)
+            by nature of transversal spring which pre-stresses the blades. Translation to flexure mechanisms entails a 
+            delicate balance between rigidity, blade resistance, parasitic motion, and weight.
+            My team and I utilized Python scripts and AI to find suitable sets of dimensions optimized for each criterion.
+            Please see my team's report for further detail on how we designed and implemented the system.</p>
         </div>
       </div>
     </section>
